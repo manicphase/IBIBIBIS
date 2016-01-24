@@ -14,4 +14,4 @@ To use this software
 7. add eachothers addresses to trusted_nodes.json
 
 
-![screenshot](https://ipfs.pics/QmdUngqEpf3DMyBLx7NX1RV2ztDNkB7ALBCEwHDdX7YouU)
+![screenshot](https://ipfs.pics/ipfs/QmdUngqEpf3DMyBLx7NX1RV2ztDNkB7ALBCEwHDdX7YouU)
