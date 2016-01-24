@@ -4,6 +4,7 @@
 Works great on raspberry PI!
 
 To use this software
+
 1. install IPFS and run the daemon
 2. download this project
 3. in terminal, navigate to this folder and type "pip install -r requirements.txt"
@@ -11,3 +12,6 @@ To use this software
 5. to scrape a board type "python scraper.py" and follow the instructions
 6. pass IPNS addresses to eachother to access eachother's archives.
 7. add eachothers addresses to trusted_nodes.json
+
+
+![screenshot](https://ipfs.pics/QmdUngqEpf3DMyBLx7NX1RV2ztDNkB7ALBCEwHDdX7YouU)

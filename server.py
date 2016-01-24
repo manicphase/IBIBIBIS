@@ -13,7 +13,7 @@ c = conn.cursor()
 
 app = Flask(__name__)
 
-
+db = "4chan.wg.archive.db"
 
 update = raw_input("do you want to search for an up to date database? Y/n ")
 

@@ -36,7 +36,6 @@ def update_db(db):
     print "Searching for database updates"
     trusted_nodes = json.loads(open("trusted_nodes.json").read())
     request_string = ""
-    print trusted_nodes
     try:
         with open(archive) as b:
             largest_db = len(b.read())
