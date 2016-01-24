@@ -5,7 +5,7 @@ import time
 import re
 
 def safe_ipfs(string):
-    if re.match("Qm[a-zA-Z0-9]{44}", string) and len(string) == 44:
+    if re.match("Qm[a-zA-Z0-9]{44}", string) and len(string) == 46:
         return string
     else:
         print "Invalid ipfs hash: {}".format(string)
@@ -36,6 +36,7 @@ def update_db(db):
     print "Searching for database updates"
     trusted_nodes = json.loads(open("trusted_nodes.json").read())
     request_string = ""
+    print trusted_nodes
     try:
         with open(archive) as b:
             largest_db = len(b.read())

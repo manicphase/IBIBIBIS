@@ -16,17 +16,17 @@ if board == "":
     board = "wg"
 
 update = raw_input("Would you like to find an existing backup of this board? (Recommended) Y/n")
-if "yY ".find(update) > 0:
+if "yY ".find(update) > -1:
     updateipns.update_db("4chan.%s.archive.db" % board)
 
 store_db = raw_input("Do you want to store your database once scraping has finished, to allow others to use it? (overwrites ipns) Y/n")
-if "yY ".find(store_db) > 0:
+if "yY ".find(store_db) > -1:
     store_db = True
 else:
     store_db = False
 
 store_db_p = raw_input("Do you want to store your database periodically, to allow others to use it? (overwrites ipns) Y/n")
-if "yY ".find(store_db_p) > 0:
+if "yY ".find(store_db_p) > -1:
     store_db_p = True
 else:
     store_db_p = False
