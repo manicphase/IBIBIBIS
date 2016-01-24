@@ -1,4 +1,4 @@
-######IBIBIBIS
+#IBIBIBIS
 (IPFS backed image board image based image search)
 
 Works great on raspberry PI!
