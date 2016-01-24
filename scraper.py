@@ -190,7 +190,7 @@ def main(board):
     last_stored = time.time()
     #updateipns.update_ipns(db)
     for row in to_scrape:
-        if (time.time() + 3600) > last_stored:
+        if (last_stored + 3600) > time.time() :
             # store db once an hour
             updateipns.update_ipns(db)
             last_stored = time.time()
