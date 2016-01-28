@@ -42,8 +42,12 @@ def update_db(db):
     except:
         largest_db = 0
     for node in trusted_nodes:
+        print trusted_nodes
+        print "node",trusted_nodes[node]
         ipns_json = json.loads(urllib2.urlopen("http://127.0.0.1:8080/ipns/"+safe_ipfs(trusted_nodes[node])).read())
-        if ipns_json["archives"][db]["filesize"] > largest_db:
+        print ipns_json
+        if int(ipns_json["archives"][db]["filesize"]) > largest_db:
+            largest_db = int(ipns_json["archives"][db]["filesize"])
             request_string = ipns_json["archives"][db]["ipfs_link"]
     print "Found file '%s' as update for '%s'. Downloading..." % (request_string, db)
 
